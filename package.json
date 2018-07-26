@@ -1,0 +1,16 @@
+{
+  "name": "kita-georeference",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sebastian Meier",
+  "license": "MIT",
+  "dependencies": {
+    "better-sqlite3": "^4.0.2",
+    "d3": "^4.10.2",
+    "fs": "0.0.1-security"
+  }
+}
