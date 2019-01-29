@@ -9,8 +9,8 @@
   "author": "Sebastian Meier",
   "license": "MIT",
   "dependencies": {
-    "better-sqlite3": "^4.0.2",
-    "d3": "^4.10.2",
-    "fs": "0.0.1-security"
+    "better-sqlite3": "^5.4.0",
+    "d3": "^5.8.0",
+    "fs": "0.0.2"
   }
 }
