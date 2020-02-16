@@ -12,12 +12,37 @@ db.prepare("CREATE TABLE IF NOT EXISTS streetnumbers (id INTEGER UNIQUE PRIMARY 
 var streets = d3.csvParse(fs.readFileSync('./data/streets.csv','utf8'))
 
 streets.forEach((s,i)=>{
-  var plz = parseInt(s.plz)
-  if(isNaN(plz)){
-    plz = 0
+  
+  if ((s.plz).includes("|")) {
+   
+    var arr = s.plz.split("|");
+
+    arr.forEach((el) => {
+      var plz = parseInt(el);
+      
+      if (isNaN(plz)) {
+      
+        plz = 0;
+      
+      } 
+        var params = [s.street, plz];
+        db.prepare('INSERT INTO streets (street, plz) VALUES (?,?)').run(params);
+      
+    });
+
+  } else {
+
+    var plz = parseInt(s.plz)
+    
+    if (isNaN(plz)) {
+      plz = 0;
+    }
+
+    var params = [s.street, plz]
+    db.prepare('INSERT INTO streets (street, plz) VALUES (?,?)').run(params)
   }
-  var params = [s.street, plz]
-  db.prepare('INSERT INTO streets (street, plz) VALUES (?,?)').run(params)
+
+
 })
 
 var streetnumbers = d3.csvParse(fs.readFileSync('./data/address.min.csv','utf8'))
