@@ -2,10 +2,10 @@
   "name": "@tsb/geocoding",
   "version": "2.0.0-alpha",
   "description": "OpenSource Geocoding Implementation (Berlin only)",
-  "main": "index.js",
+  "main": "api/index.ts",
   "scripts": {
     "test": "inpyjamas-scripts test",
-    "db:setup":"ts-node tools/setup-db.ts"
+    "db:setup": "ts-node tools/setup-db.ts"
   },
   "author": "Sebastian Meier",
   "contributors": [
