@@ -4,7 +4,7 @@ import { NowRequest, NowResponse } from "@vercel/node";
 import { requestHandler } from "./_lib/request-handler";
 import { RouteHandler } from "./_lib/commmon/types";
 import { setupResponse } from "./_lib/util/setup-response";
-import { getStreetNumber, getGeoLocationOfHouseNumber } from "./_lib/db";
+import { getGeoLocationOfHouseNumber } from "./_lib/db";
 const routeHandler: RouteHandler = async (request, response) => {
   // try {
   const statusCode = 200;

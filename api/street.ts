@@ -16,7 +16,6 @@ const routeHandler: RouteHandler = async (request, response) => {
     throw new Error("street query needs to be of type string");
   }
   const rows = getStreet(street);
-  console.log(rows);
   const body = setupResponse(rows);
   send(response, statusCode, body);
 };

@@ -9,10 +9,9 @@ export async function requestHandler(
   try {
     response.setHeader("Access-Control-Allow-Origin", "*");
     response.setHeader("Access-Control-Allow-Methods", "GET, OPTIONS");
-    response.setHeader("Access-Control-Allow-Headers", "X-Requested-With");
     response.setHeader(
       "Access-Control-Allow-Headers",
-      "Authorization, Accept, Content-Type"
+      "X-Requested-With, Authorization, Accept, Content-Type"
     );
     if (request.method === "OPTIONS") {
       return send(response, statusCode);
