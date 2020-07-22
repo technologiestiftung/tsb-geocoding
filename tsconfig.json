@@ -1,0 +1,15 @@
+{
+  "include": ["api"],
+  "exclude": ["node_modules", "tools"],
+  "compilerOptions": {
+    "target": "ES2015",
+    "module": "commonjs",
+    "outDir": "./dist",
+    "rootDir": "api",
+    "strict": true,
+    "typeRoots": ["node_modules/@types"],
+    "types": ["jest", "node"],
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true
+  }
+}
