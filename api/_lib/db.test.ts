@@ -16,16 +16,16 @@ describe("db tests", () => {
     expect(getStreetNumber("5082")).toMatchInlineSnapshot(`
       Array [
         Object {
+          "id": 162848,
+          "num": "3",
+        },
+        Object {
           "id": 162975,
           "num": "1",
         },
         Object {
           "id": 166992,
           "num": "2",
-        },
-        Object {
-          "id": 162848,
-          "num": "3",
         },
         Object {
           "id": 170646,
