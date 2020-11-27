@@ -14,13 +14,13 @@ export function setup() {
   db.prepare(
     `
   CREATE TABLE IF NOT EXISTS
-    streets (id TEXT, street TEXT, plz INTEGER)
+    streets (id INTEGER, street TEXT, plz INTEGER)
   `
   ).run();
   db.prepare(
     `
   CREATE TABLE IF NOT EXISTS
-    streetnumbers (id INTEGER UNIQUE PRIMARY KEY AUTOINCREMENT, street TEXT, num TEXT, lat float, lon float)
+    streetnumbers (id INTEGER UNIQUE PRIMARY KEY AUTOINCREMENT, street INTEGER, num TEXT, lat float, lon float)
     `
   ).run();
 
