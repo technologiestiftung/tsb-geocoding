@@ -4,6 +4,17 @@ OpenSource Geocoding Implementation used for [kita-suche.berlin](http://kita-suc
 
 Runs on vercel.com [geocoding.vercel.app](https://geocoding.vercel.app/)
 
+## Preparations
+
+The file api/_data/address.csv is an export from: https://fbinter.stadt-berlin.de/fb/wfs/data/senstadt/s_wfs_adressenberlin
+And convert to CSV only keeping the columns: X,Y,hnr,hnr_zusatz,str_nr,str_name,plz
+
+To transform to sqlite execute:
+
+```
+npm run db:setup
+```
+
 ## Usage
 
 To lookup a street (e.g. "Platz der Luftbrücke") do the following.
