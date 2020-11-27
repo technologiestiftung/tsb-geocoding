@@ -18,6 +18,8 @@ export function setup() {
     streetnumbers (id INTEGER UNIQUE PRIMARY KEY AUTOINCREMENT, street integer, num text, plz interger, lat float, lon float)
     `
   ).run();
+  db.prepare(`TRUNCATE TABLE streets`).run();
+  db.prepare(`TRUNCATE TABLE streetnumbers`).run();
 
   const streetsCsvfilePath = `${dataFolder}/streets.csv`; // path.resolve(__dirname, "../_data/streets.csv");
   const fileContent = fs.readFileSync(streetsCsvfilePath, "utf8");
