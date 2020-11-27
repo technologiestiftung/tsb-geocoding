@@ -17,27 +17,27 @@ describe("db tests", () => {
       Array [
         Object {
           "id": 162975,
-          "num": "1"
+          "num": "1",
         },
         Object {
           "id": 166992,
-          "num": "2"
+          "num": "2",
         },
         Object {
           "id": 162848,
-          "num": "3"
+          "num": "3",
         },
         Object {
           "id": 170646,
-          "num": "4"
+          "num": "4",
         },
         Object {
           "id": 171657,
-          "num": "5"
+          "num": "5",
         },
         Object {
           "id": 171923,
-          "num": "6"
+          "num": "6",
         },
       ]
     `);
