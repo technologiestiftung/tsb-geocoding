@@ -20,7 +20,7 @@
   "devDependencies": {
     "@inpyjamas/scripts": "0.1.5-alpha",
     "@types/better-sqlite3": "5.4.0",
-    "@types/d3-dsv": "1.0.36",
+    "@types/d3-dsv": "2.0.1",
     "@types/micro": "7.3.3",
     "@vercel/node": "1.7.3",
     "eslint": "7.5.0"
