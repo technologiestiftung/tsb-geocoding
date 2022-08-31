@@ -15,7 +15,7 @@
   "dependencies": {
     "better-sqlite3": "7.6.2",
     "d3-dsv": "1.2.0",
-    "micro": "9.3.4"
+    "micro": "9.4.1"
   },
   "devDependencies": {
     "@inpyjamas/scripts": "0.1.5-alpha",
