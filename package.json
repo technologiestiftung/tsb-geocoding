@@ -13,13 +13,13 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "better-sqlite3": "7.1.0",
+    "better-sqlite3": "7.6.2",
     "d3-dsv": "1.2.0",
     "micro": "9.3.4"
   },
   "devDependencies": {
     "@inpyjamas/scripts": "0.1.5-alpha",
-    "@types/better-sqlite3": "5.4.0",
+    "@types/better-sqlite3": "7.6.0",
     "@types/d3-dsv": "1.0.36",
     "@types/micro": "7.3.3",
     "@vercel/node": "1.7.3",
