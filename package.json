@@ -18,12 +18,12 @@
     "micro": "9.3.4"
   },
   "devDependencies": {
-    "@inpyjamas/scripts": "0.1.5-alpha",
+    "@inpyjamas/scripts": "1.0.0",
     "@types/better-sqlite3": "7.6.0",
-    "@types/d3-dsv": "1.0.36",
+    "@types/d3-dsv": "3.0.0",
     "@types/micro": "7.3.3",
-    "@vercel/node": "1.7.3",
-    "eslint": "7.5.0"
+    "@vercel/node": "2.5.11",
+    "eslint": "8.23.0"
   },
   "repository": {
     "type": "git",
